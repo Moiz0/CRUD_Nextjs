@@ -10,9 +10,6 @@ This is a simple CRUD application built with **Next.js**, **React**, and **Mater
 - RESTful API routes (`/api/topics`)
 - Dynamic routing with `useRouter` for navigation
 
-## 📁 Project Structure
-
-
 ## 🧰 Technologies Used
 
 - [Next.js](https://nextjs.org)
