@@ -17,12 +17,12 @@ const getTopics = async () => {
       cache: "no-store",
     });
 
-    if (!res.ok) throw new Error("Failed to fetch Posts");
+    if (!res.ok) throw new Error("Failed to fetch Topics");
 
     return res.json();
   } catch (error) {
-    console.error("Error loading Post: ", error);
-    return { topics: [] }; // Avoid crash
+    console.error("Error loading Topic: ", error);
+    return { topics: [] };  
   }
 };
 
