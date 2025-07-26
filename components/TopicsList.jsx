@@ -12,7 +12,8 @@ import {
 
 const getTopics = async () => {
   try {
-    const res = await fetch("/api/topics", {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+    const res = await fetch(`${baseUrl}/api/topics`, {
       cache: "no-store",
     });
 
@@ -20,9 +21,11 @@ const getTopics = async () => {
 
     return res.json();
   } catch (error) {
-    console.log("Error loading Post: ", error);
+    console.error("Error loading Post: ", error);
+    return { topics: [] }; // Avoid crash
   }
 };
+
 
 export default async function TopicsList() {
   const { topics } = await getTopics();
