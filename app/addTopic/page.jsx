@@ -41,19 +41,19 @@ export default function AddTopic() {
     <form onSubmit={handleSubmit}>
       <Stack spacing={2}>
         <TextField
-          label="Post Title"
+          label="Topic Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           fullWidth
         />
         <TextField
-          label="Post Description"
+          label="Topic Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           fullWidth
         />
         <Button type="submit" variant="contained" color="success">
-          Add Post
+          Add Topic
         </Button>
       </Stack>
     </form>

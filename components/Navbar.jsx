@@ -12,7 +12,7 @@ export default function Navbar() {
         </Link>
         <Link href="/addTopic" passHref>
           <Button variant="contained" sx={{ backgroundColor: "#fff", color: "#000" }}>
-            Add Post
+            Add Topic
           </Button>
         </Link>
       </Toolbar>

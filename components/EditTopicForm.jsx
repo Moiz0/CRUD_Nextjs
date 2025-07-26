@@ -47,7 +47,7 @@ export default function EditTopicForm({ id, title, description }) {
           fullWidth
         />
         <Button type="submit" variant="contained" color="success">
-          Update Post
+          Update Topic
         </Button>
       </Stack>
     </form>
